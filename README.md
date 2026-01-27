@@ -41,7 +41,8 @@ Este laboratório focou na validação de regras de detecção para as seguintes
 ![Execução Atomic Red Team](./evidence/T1003-credential-dumping/terminal-execution.png)
 
 * **Detecção no Wazuh:**
-![Alerta Wazuh](./evidence/T1003-credential-dumping/wazuh-alert-dashboard.png)
+🚧 Cenário em execução: Evidências de detecção T1003.008 serão adicionadas em breve.
+<!-- ![Alerta Wazuh](./evidence/T1003-credential-dumping/wazuh-alert-dashboard.png) -->
 
 ### 2. T1070.004 - Indicator Removal: File Deletion
 **Cenário:** O atacante tenta apagar seus rastros deletando arquivos de logs ou payloads.
