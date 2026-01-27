@@ -1,4 +1,6 @@
 # 🛠️ Guia de Instalação e Configuração do Laboratório
+> **⚠️ Security Note / Nota de Segurança:**
+> Todos os endereços IP e configurações de rede documentados neste guia referem-se a um ambiente virtualizado e isolado (NAT Network). Nenhum endereço IP público (WAN) ou dados sensíveis reais foram expostos. As configurações servem apenas para fins educacionais em ambiente controlado.
 
 Este documento descreve os passos técnicos realizados para provisionar o ambiente de **Threat Detection** utilizando VirtualBox, Wazuh e Ubuntu Server.
 
