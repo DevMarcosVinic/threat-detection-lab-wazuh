@@ -84,4 +84,4 @@ Durante a implementação, o principal desafio foi a **visibilidade de rede vers
 ## 💡 Conclusão e Aprendizados
 A implementação do Atomic Red Team permitiu validar a eficácia das regras padrão do Wazuh.
 * **Insight Técnico:** Percebi que regras padrão de FIM (File Integrity Monitoring) possuem um delay de varredura (syscheck frequency). Para ambientes críticos, o ajuste fino para monitoramento em tempo real (`realtime`) é obrigatório.
-* **Resultado:** Após o tuning, o tempo médio de detecção (MTTD) para acesso ao `/etc/shadow` caiu para menos de 2 segundos.
+* **Resultado:** Após o tuning, o tempo médio de detecção (MTTD) para acesso ao `/etc/shadow` caiu para menos de 5 segundos.
