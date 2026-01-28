@@ -35,14 +35,15 @@ A infraestrutura foi desenhada para simular um ambiente corporativo segmentado, 
 Este laboratório focou na validação de regras de detecção para as seguintes técnicas:
 
 ### 1. T1003.008 - OS Credential Dumping (/etc/shadow)
-**Cenário:** Um atacante tenta ler arquivos críticos do sistema para obter hashes de senhas e realizar quebra offline.
+**Cenário:** Simulação de um atacante tentando obter acesso root para ler o arquivo de hashes de senha (`/etc/shadow`).
 * **Comando Executado (Atomic Red Team):** `Invoke-AtomicTest T1003.008`
 * **Evidência da Execução:**
-![Execução Atomic Red Team](./evidence/T1003-credential-dumping/terminal-execution.png)
+![Execução Atomic Red Team](./evidence/T1003-credential-dumping/ubuntu-terminal-execution.png)
 
 * **Detecção no Wazuh:**
-🚧 Cenário em execução: Evidências de detecção T1003.008 serão adicionadas em breve.
-<!-- ![Alerta Wazuh](./evidence/T1003-credential-dumping/wazuh-alert-dashboard.png) -->
+> *Nota: O SIEM detectou as tentativas de força bruta e falha de autenticação associadas à tentativa do atacante de elevar privilégios para acessar o arquivo protegido.*
+
+![Alerta de Falha de Autenticação](./evidence/T1003-credential-dumping/wazuh-auth-failure.png)
 
 ### 2. T1070.004 - Indicator Removal: File Deletion
 **Cenário:** O atacante tenta apagar seus rastros deletando arquivos de logs ou payloads.
